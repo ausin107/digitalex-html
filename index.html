@@ -57,31 +57,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                <nav class="navigation navbar navbar-expand-md navbar-dark">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarsExample04"
-                    aria-controls="navbarsExample04"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarsExample04">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="index.html"> Home </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
             </div>
           </div>
           <!-- end header inner -->
@@ -126,38 +101,186 @@
     <!-- end banner -->
     <!-- about section -->
     <div class="about">
-      <div class="container black" style="padding: 50px 0px; font-size: 20px;">
+      <div class="container black" style="padding: 50px 0px; font-size: 20px;color: black">
         <p style="color: black">
-         <div  style="color: black; font-size: 40px; font-weight: bold; padding-bottom: 10px;">
+         <div  style="color: black; font-size: 30px; font-weight: bold; padding-bottom: 10px;">
           Chỉ báo RSI (Relative Strength Index)  
          </div>
-         <div  style="color: black; padding-bottom: 10px;">
             Chỉ báo RSI (Relative Strength Index) là chỉ báo động lượng dùng để xác định xu hướng tiếp diễn của cổ phiếu.
           Đây là một chỉ báo thông dụng được biểu hiện dưới dạng dao động (một đường dao động giữa 2 biên) từ 0 đến 100
           mà ở đó dao động dưới 30 điểm được gọi là quá bán và dao động trên 70 điểm là quá mua. Ở vùng quá bán 30 điểm,
-          cổ phiếu được cho là đã bị bán quá nhiều và sẽ có xu hướng đảo chiều tăng.  
-         </div>
-         <div  style="color: black; padding-bottom: 10px;">
+          cổ phiếu được cho là đã bị bán quá nhiều và sẽ có xu hướng đảo chiều tăng. 
+          <br> 
             Chỉ báo RSI được tính qua 2 bước:
-         </div>
-         <div style="color: black; padding-bottom: 10px;">
+          <br> 
             Đầu tiên tính chỉ số sức mạnh tương đối, chỉ số này được tính bằng cách chia
             trung bình ngày tăng cho trung bình các ngày giảm trong 1 chu kỳ
-         </div>
-         <div style="color: black; font-weight: bold; padding-bottom: 10px;">
-            RS (Relative Strength) =  (average gain)/(average loss)
-         </div>
-         <div style="color: black; padding-bottom: 10px;">
+          <br> 
+            <b>
+              RS (Relative Strength) =  (average gain)/(average loss)
+            </b>
+          <br> 
             Sau khi đã tính được chỉ số sức mạnh tương đối, sử dụng công thức sau là đã tính giá trị RSI hiện tại
-         </div>
-         <div style="color: black; font-weight: bold; padding-bottom: 10px;">
-            RSI = 100  -  100/(1+RS)
-         </div>
-         <div style="color: black; padding-bottom: 10px;">
+          <br> 
+            <b>
+              RSI = 100  -  100/(1+RS)
+            </b>
+          <br> 
             Chỉ báo RSI thường sẽ có chu kỳ là 14 ngày, tức là sẽ dùng dữ liệu của 14 ngày trước để tính ra giá trị RSI, tùy theo mức độ am hiểu và độ rộng của phân tích mà nhà đầu tư có để điều chỉnh chu kỳ của RSI.
-         </div>
-         <img src="./images/rsi_1.png" alt="">
-         <img src="./images/rsi_2.png" alt="">
+         <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+           <img src="./images/rsi_1.png" alt="" style="margin-bottom: 10px;">
+            <div><b><i>Biểu đồ giá cổ phiếu</i></b></div>
+          </div>
+          <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+            <img src="./images/rsi_2.png" alt="" style="margin-bottom: 10px;">
+             <div><b><i>Biểu đồ RSI</i></b></div>
+           </div>
+        </p>
+        <p style="color: black">
+          <div  style="color: black; font-size: 30px; font-weight: bold; padding-bottom: 10px;">
+            Chỉ báo dao động Stochastic Oscillator
+          </div>
+          Chỉ báo Stochastic là những đường chỉ sự dao động của giá dựa trên cơ sơ quan sát sau: 
+          <br>
+          - Khi giá tăng, giá đóng cửa có khuynh hướng tiến gần đến biên trên của một khung giá (price range).
+          <br>
+          - Khi giá giảm, giá đóng cửa có khuynh hướng tiến gần đến biên dưới của một khung giá (price range). Mỗi chỉ báo Stochastic sử dụng hai đường, % K và %D. 
+          <br>
+          Có hai đường Stochastic: Slow Stochastic và Fast Stochastic. Sự khác biệt của hai đường này được thể hiện ở cách tính hai đường %K và %D. Đường Slow Stochastic chậm và nhẵn hơn đường Fast Stochastic. 
+          <br>
+          Công thức tính chỉ báo dao động Stochastic: 
+          <br>
+          <b>
+            % K =  100 x [(Close – Lowest Low (n))/ (Highest High (n) – Lowest Low (n))] 
+          </b>
+          <br>
+          <b>
+            % D = 3 – Periods moving average of % K 
+          </b>
+          <br>
+          <b>
+            n = Number of periods used in calculation
+          </b>
+          <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+            <img src="./images/Biểu đồ Stochastic Oscillator_2.JPG" alt="" style="margin-bottom: 10px;width: 100%;">
+             <div><b><i>Biểu đồ Stochastic Oscillator</i></b></div>
+           </div>
+        </p>
+        <p style="color: black">
+          <div  style="color: black; font-size: 30px; font-weight: bold; padding-bottom: 10px;">
+            Chỉ báo đường SMA (Simple Moving Average – đường trung bình động giản đơn)
+            </div>
+            Chỉ báo đường SMA là đường được tính bởi trung bình giá đóng cửa của nến giá gần nhất trong một khoảng thời gian nhất định. Đây là chỉ báo kỹ thuật cơ bản tuy nhiên rất hiệu quả trong giao dịch, đặc biệt là ngắn hạn.
+            <br>
+            Công thức tính:
+            <br>
+            <b>SMA = (Giá đóng cửa của n ngày trước + Giá đóng cửa của (n-1) ngày trước + ... + Giá đóng cửa của ngày hiện tại) / n </b>
+            <br>
+            Trong công thức trên: 
+            <br>
+            <b>
+              Giá đóng cửa của một ngày là giá cuối cùng mà tài sản được giao dịch trong ngày đó. 
+            </b>
+            <br>
+            <b>
+              n là số ngày được sử dụng để tính toán SMA. Đối với đoạn mã trên biểu đồ, n được đặt là 100 và 200
+            </b>
+            <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+              <img src="./images/Biểu đổ SMA_3.JPG" alt="" style="margin-bottom: 10px;width: 100%;">
+               <div><b><i>Biểu đồ SMA, SMA with Buy and Sell Signals</i></b></div>
+             </div>
+        </p>
+        <p style="color: black">
+        <div  style="color: black; font-size: 30px; font-weight: bold; padding-bottom: 10px;">
+          Chỉ báo đường EMA (Exponential Moving Average– đường trung bình động lũy thừa)
+        </div>
+        EMA (Exponential Moving Average) là một chỉ báo kỹ thuật trong phân tích kỹ thuật của thị trường tài chính. Nó được sử dụng để xác định xu hướng giá của một tài sản và giúp nhà đầu tư và nhà giao dịch đưa ra quyết định mua hoặc bán. EMA được tính dựa trên giá đóng cửa của tài sản trong một khoảng thời gian nhất định. Tuy nhiên, giá trị của EMA không phụ thuộc hoàn toàn vào giá đóng cửa gần nhất, mà nó tính toán bằng cách sử dụng một hệ số trọng số, giúp tăng cường tầm quan trọng của các giá trị gần đây hơn so với các giá trị cũ hơn.
+        <br>
+        Công thức EMA:
+          <br>
+          <b>EMA = (Close – EMA_previous) * multiplier + EMA_previous </b>
+          <br>
+          Trong đó:  
+          <br>
+          <b>
+            Close là giá đóng cửa của một ngày cụ thể.  
+          </b>
+          <br>
+          <b>
+            EMA_previous là giá trị EMA từ ngày trước đó. 
+          </b>
+          <br>
+          <b>
+            Multiplier là hệ số trọng số, được tính theo công thức: multiplier = 2 / (span + 1) 
+          </b>
+          <br>
+          Trong đoạn mã trên, span là số ngày được sử dụng để tính toán EMA (20 cho EMA_20 và 50 cho EMA_50). Để tính toán EMA, ta bắt đầu bằng việc tính toán giá trị EMA ban đầu (EMA_0) bằng cách sử dụng giá trị trung bình đơn giản (SMA) của các giá đóng cửa trong một khoảng thời gian ban đầu. EMA_0 = SMA(span)
+          <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+            <img src="./images/Biểu đồ EMA_4.JPG" alt="" style="margin-bottom: 10px;width: 100%;">
+            <div><b><i>Biểu đồ EMA, EMA with Buy and Sell Signals</i></b></div>
+          </div>
+        </p>
+        <p style="color: black">
+          <div  style="color: black; font-size: 30px; font-weight: bold; padding-bottom: 10px;">
+            Chỉ báo đường MACD (Moving Average Convergence Divergence – đường trung bình động hội tụ / phân kỳ) 
+          </div>
+            MACD (Moving Average Convergence Divergence) là một chỉ báo kỹ thuật phổ biến trong phân tích kỹ thuật của thị trường tài chính, bao gồm cả thị trường chứng khoán. Chỉ báo này được sử dụng để xác định xu hướng và tín hiệu mua/bán trên biểu đồ giá của một tài sản. 
+          <br>
+          MACD bao gồm hai đường chính: đường MACD và đường trung bình chuyển động (signal line). 
+          <br>
+          - Đường MACD: Đường MACD tính toán bằng cách lấy sự khác biệt giữa hai đường trung bình di động xác định (thường là trung bình di động trượt theo 12 ngày và 26 ngày). 
+          <br>
+          - Đường MACD thể hiện sự chênh lệch giữa hai đường trung bình và có thể cho thấy sự tăng trưởng hay sự suy giảm của xu hướng giá. Đường trung bình chuyển động (signal line): Đường signal line là một trung bình di động trượt của đường MACD (thường là trung bình di động trượt theo 9 ngày). Nó giúp làm mịn đường MACD và tạo ra các tín hiệu giao dịch.
+          <br>
+          Công thức MACD (Moving Average Convergence Divergence) bao gồm các bước tính toán sau: 
+            <br>
+            <b>Tính toán giá trị MACD Line: MACD Line = EMA(12) - EMA(26)</b>
+            <br>
+            Trong đó:  
+            <br>
+            EMA(12) là giá trị trung bình di động trượt theo 12 ngày (Exponential Moving Average). 
+            <br>
+            EMA(26) là giá trị trung bình di động trượt theo 26 ngày. 
+            <br>
+            <b>Tính toán giá trị Signal Line: Signal Line = EMA(MACD Line, 9)</b>
+            <br>
+            Trong đó:  
+            <br>
+            EMA(MACD Line, 9) là giá trị trung bình di động trượt theo 9 ngày của MACD Line. 
+            <br>
+            <b>
+              Tính toán giá trị Histogram (còn được gọi là MACD Histogram): 
+            </b>
+            <br>
+            Histogram = MACD Line - Signal line
+            <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+              <img src="./images/Biểu đồ MACD_5.JPG" alt="" style="margin-bottom: 10px;width: 100%;">
+              <div><b><i>Biểu đồ MACD</i></b></div>
+            </div>
+        </p>
+        <p style="color: black">
+          <div  style="color: black; font-size: 30px; font-weight: bold; padding-bottom: 10px;">
+            Chỉ báo đường Bollinger bands (Moving Average)
+          </div>
+          Bollinger bands là công cụ kết hợp giữa đường trung bình động MA (Moving Average) và độ lệch chuẩn. 
+          <br>
+          Cấu tạo chỉ báo này bao gồm một đường trung bình động ở giữa và hai đường biên trên, biên dưới. Khoảng cách giữa đường MA với các dải bollinger của nó được xác định bởi mức độ biến động giá. Khi giá chứng khoán biến động mạnh, dải bollinger sẽ mở rộng và ngược lại khi giá chứng khoán biến động ít hơn, dải bollinger sẽ dần thu hẹp lại.
+          <br>
+          Công thức tính Bollinger bands 
+          <br>
+          Cách tính Bollinger bands cũng đơn giản như cấu tạo của nó. 
+          <br>
+          Cụ thể:
+          <br>
+          <b> Dải giữa là đường trung bình động chu kỳ 20 ngày (SMA20), được tính bằng giá trị trung bình của giá đóng cửa. </b>
+          <br>
+          <b>Dải trên = SMA20 ngày + 2 x Độ lệch chuẩn 20 ngày. </b>
+          <br>
+          <b>Dải dưới = SMA20 ngày – 2 x Độ lệch chuẩn 20 ngày.</b>
+          <div style="display: flex;align-items: center; flex-direction: column; margin-bottom: 20px;">
+            <img src="./images/Biểu đồ Bollinger bands_6.png" alt="" style="margin-bottom: 10px;width: 100%;">
+            <div><b><i>Biểu đồ Bollinger bands</i></b></div>
+          </div>
         </p>
       </div>
     </div>
