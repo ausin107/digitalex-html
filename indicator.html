@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>STOCK</title>
+    <style>
+      body {
+        background-color: #0b2447;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      input {
+        appearance: button;
+        background-color: #17094c;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 5px 10px 0;
+        overflow: visible;
+        padding: 12px 40px;
+        text-transform: none;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        white-space: nowrap;
+      }
+
+      .highlight a {
+        font-family: 'Arial', sans-serif;
+        font-size: 35px;
+        font-stretch: extra-expanded;
+        color: #0b2447;
+        font-weight: 1000;
+        line-height: 25px;
+        font-stretch: extra-expanded;
+        letter-spacing: 5px; /* Giãn chữ 2px */
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        transform: translate(-50%, 50%);
+      }
+      td {
+        font-size: 20px;
+      }
+
+      .highlight p {
+        font-family: 'Arial', sans-serif;
+        font-size: 70px;
+        font-stretch: extra-expanded;
+        color: #0b2447;
+        font-weight: 5000;
+        line-height: 10px;
+        font-stretch: extra-expanded;
+        letter-spacing: 20px; /* Giãn chữ 2px */
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        transform: translate(-50%, 50%);
+      }
+
+      .highlight {
+        background: rgba(255, 255, 255, 1); /* Màu trắng đục với độ trong suốt 0.5 */
+        border-radius: 10px; /* Độ mờ khung tròn / / Khoảng cách giữa văn bản và khung */
+        height: 500px;
+        width: 1000px;
+        /* Căn nội dung theo chiều dọc giữa */
+        /* Căn văn bản bên trái */
+      }
+      .highlight table {
+        position: absolute;
+        top: 50%;
+        left: 37%;
+        transform: translate(-50%, 50%);
+      }
+      .highlight img {
+        position: absolute;
+        top: 70px;
+        left: 75%;
+        transform: translate(-50%, 50%);
+        position: relative;
+        width: 400px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="result" method="post">
+      <div class="highlight">
+        <p>STOCK</p>
+        <a>TECHNICAL INDICATOR </a>
+        <div class="inner-content">
+          <table>
+            <tr>
+              <td>Nhập mã chứng khoán bạn quan tâm: <input type="text" size="3" maxlength="10" name="your_stock" /></td>
+            </tr>
+            <tr>
+              <td align="right">
+                <input type="reset" value="Nhập lại" />
+                <input type="submit" value="Thực hiện kiểm tra mã chứng khoán" />
+              </td>
+            </tr>
+          </table>
+          <img src="./images/ban_img.png" alt="image despcriton" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
